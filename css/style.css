@@ -109,13 +109,9 @@ p { margin: 0 0 1rem; }
   gap: 1rem;
 }
 
-.brand {
-  font-family: var(--font-display);
-  font-weight: 700;
-  font-size: 1.2rem;
-  text-decoration: none;
-  letter-spacing: -0.02em;
-}
+.brand { display: inline-flex; align-items: center; line-height: 0; text-decoration: none; }
+.brand svg { transition: transform .2s; }
+.brand:hover svg { transform: scale(1.06); }
 
 .nav { display: flex; gap: 1.6rem; }
 .nav a {
