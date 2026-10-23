@@ -303,9 +303,17 @@
   <footer class="site-footer">
     <div class="container foot">
       <p>&copy; <span id="year">2026</span> Muhammad Areeb Khan</p>
-      <a href="#top">Back to top</a>
+           <a href="#top" id="backToTop">Back to top</a>
+
     </div>
   </footer>
+
+  <script>
+  document.getElementById("backToTop").addEventListener("click", function (e) {
+    e.preventDefault();
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+</script>
 
   <script src="js/main.js"></script>
 </body>
